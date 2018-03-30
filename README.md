@@ -1,6 +1,5 @@
 ---
-services: app-service\web, app-service, highcharts-expor-server
-platforms: node
+platforms: node, azure web app, highcharts-export-server
 author: mushgev
 ---
 # Highcharts Export Node.js Server which can be deployed to Azure Web App
