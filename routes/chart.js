@@ -20,10 +20,6 @@ router.post('/', function (req, res, next) {
         //If the output is not PDF or SVG, it will be base64 encoded (res.data).
         //If the output is a PDF or SVG, it will contain a filename (res.filename).
         res.send(result.data);
-
-        //Kill the pool when we're done with it, and exit the application
-        exporter.killPool();
-        process.exit(1);
     });
 });
 
